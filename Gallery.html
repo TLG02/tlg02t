@@ -1,0 +1,228 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+    $(".toggle").on("click", function() {
+        if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+        } else {
+            $(".item").addClass("active");
+        }
+    });
+});
+    </script>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="index.html">Chess-I</a></li>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="About Us.html">About</a></li>
+            <li class="item"><a href="Chess Game\Game.html">Play</a></li>
+            <li class="item"><a href="Gallery.html">Gallery</a></li>
+            <li class="item"><a href="Chess Clubs.html">Chess Clubs</a></li>
+            <li class="item"><a href="Touranments.html">Touranments</a></li>
+            <li class="item"><a href="History.html">History</a></li>
+            <li class="item"><a href="Ranking.html">Ranking</a></li>
+            </li>
+            <li class="item button"><a href="Contact Us.html">Contact Us</a></li>
+            <li class="item button secondary"><a href="Frequently Asked Question`s.html">Frequently Asked Question`s</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+        </ul>
+    </nav>
+    <main>
+      <div class="image-grid">
+        <img src="kingchess.jpeg.jpg" alt="chess">
+        <img src= "Manja.jpeg" alt="Magnus">
+        <img src="alexander alekhine 1913.jpg" alt="alexander">
+        <img src="Garry.jpeg" alt="Garry">
+        <img src="Elbow.jpg" alt="Elbow">
+        <img src="manvswoman.jpeg.jpg" alt="manvswoman">
+        <img src="overtheboard.jpeg.jpg" alt="overtheboard">
+        <img src="computerchess.jpeg.jpg".jpg" alt="computerchess">
+      </div>
+
+  </body>
+</html>
+
+
+<style> 
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+
+.topnav #myLinks {
+  display: none;
+}
+
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+
+.box{
+width: auto;
+height: auto;
+border: auto solid black;
+}
+
+.box{
+width: auto;
+height: auto;
+border: auto solid black;
+margin: auto;
+padding: auto;
+}
+
+body {
+
+  background-color: black
+}
+
+body, html {
+  height: 100%;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+}
+
+.bg-image {
+ 
+  background-image: url("Manj.webp");
+  
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+
+  height: 100%; 
+  
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.bg-text {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+ 
+  text-align: center;
+}
+
+.aok {
+
+  right: 50px;
+}
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+</style>
+
+
+
+
+
+<script>
+
+
+
+
+
+
+
+
+</script> 
+      
+    </main>
+</body>
+</html>
